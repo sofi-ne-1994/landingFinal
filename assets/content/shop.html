@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="shortcut icon" href="../img/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+     <!-- NAV -->
+     <nav class="navbar navbar-expand-lg botonera">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand" href="/index.html">
+                <img src="../assets/img/logo/arribaLasPatasLogo2.svg" alt="Logo Arriba las Patas">
+            </a>
+            <!-- END LOGO -->
+
+            <!-- BTN HAMBURGUESA -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- END BTM HAMBURGUESA -->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    
+                    <!-- servicios -->
+                    <li class="nav-item">
+                        <a class="nav-link " href="../content/servicios.html">Servicios</a>
+                    </li>
+                    <!-- endServicios -->
+                    <!-- Shop-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./assets/content/shop.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./shop.html">Todo</a></li>
+                            <li><a class="dropdown-item" href="#">Gatos</a></li>
+                            <li><a class="dropdown-item" href="#">Perros</a></li>
+                            <li><a class="dropdown-item" href="#">Aves</a></li>
+                            <li><a class="dropdown-item" href="#">peces</a></li>
+                            <li><a class="dropdown-item" href="#">Reptiles</a></li>
+                            <li><a class="dropdown-item" href="#">Otras especies</a></li>
+                        </ul>
+                    </li>
+                    <!-- endShop -->
+                    <!-- Locales -->
+                    <li class="nav-item">
+                        <a class="nav-link " href="../content/locales.html">Locales</a>
+                    </li>
+                    <!-- endlocales -->
+                    <!-- Nosotros -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../content/nosotros.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Nosotros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Profesionales</a></li>
+                        </ul>
+
+                    </li>
+                    <!-- endNosotros -->
+
+
+                                        <!-- Shop-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./assets/content/shop.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./assets/content/shop.html">Todo</a></li>
+                            <li><a class="dropdown-item" href="#">Gatos</a></li>
+                            <li><a class="dropdown-item" href="#">Perros</a></li>
+                            <li><a class="dropdown-item" href="#">Aves</a></li>
+                            <li><a class="dropdown-item" href="#">peces</a></li>
+                            <li><a class="dropdown-item" href="#">Reptiles</a></li>
+                            <li><a class="dropdown-item" href="#">Otras especies</a></li>
+                        </ul>
+                    </li>
+                    <!-- endShop -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAV -->
+
+
+    <!-- MAIN -->
+    <main class="py-3 container-fluid">
+        <h1 class="text-center fs3 my-3">Nuestros productos</h1>
+        <!-- FILTROS -->
+        <section class="row mb-3 filtros">
+            <div class="col-md-12 mx-auto">
+                <form action="">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="search" placeholder="buscar">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                            <select 
+                            id="sort-method"
+                            class="form-select w-25" 
+                            aria-label="default select example"
+                            >
+                                <option value="1">mayor precio</option>
+                                <option value="2">menor precio</option>
+                                <option value="3">alfabeticamente</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- END FILTRO -->
+
+        <!--PRODUCTOS  -->
+        <section class="row">
+            <!-- CARD1 -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="../img/productos/cobayo.webp" class="card-img-top w-100" alt="Alimento para cobayo">
+                    <div class="card-body">
+                        <h2 class="card-title">Alimento para cobayo Zootec</h2>
+                        <p class="card-text">Stick De Vegetales Para Cobayo - 40 Gr</p>
+                        <p class="price">$ <span id="precioRemera">2500</span></p>
+                        <input type="number" id="cantidadProducto1" value="1" min="1" max="10">
+                        <button onclick="agregarProducto('Sahumerio 1', 2500, 'cantidadProducto1')" href="#"
+                            class="btn bg-pink">agregar al carrito</button>
+                    </div>
+                </div>
+            </figure>
+            <!-- END CARD1 -->
+
+            <!-- CARD1 -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="../img/productos/conejos.webp" class="card-img-top w-100" alt="Alimento para conejo">
+                    <div class="card-body">
+                        <h2 class="card-title">Alimento para conejos</h2>
+                        <p class="card-text">Alimento Conejos  Super Premium - 750 Gr</p>
+                        <p class="price">$ <span id="precioRemera">3000</span></p>
+                        <input type="number" id="cantidadProducto2" value="1" min="1" max="10">
+
+                        <button onclick="agregarProducto('Sahumerio 2', 3000,'cantidadProducto2')" href="#"
+                            class="btn bg-pink">agregar al carrito</button>
+                    </div>
+                </div>
+            </figure>
+            <!-- END CARD2 -->
+
+            <!-- CARD3 -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="../img/productos/excellentSmartAdulto.webp" class="card-img-top w-100" alt="Alimento para pero adulto Excellent">
+                    <div class="card-body">
+                        <h2 class="card-title">Perro adulto Excellent</h2>
+                        <p class="card-text">Excellent Smart Formula Perro Adulto 20 Kg</p>
+                        <p class="price">$ <span id="precioRemera">3500</span></p>
+                        <input type="number" id="cantidadProducto3" value="1" min="1" max="10">
+
+                        <button onclick="agregarProducto('Sahumerio 3', 3500,'cantidadProducto3')" href="#"
+                            class="btn bg-pink">agregar al carrito</button>
+                    </div>
+                </div>
+            </figure>
+            <!-- END CARD3 -->
+
+            <!-- CARD4 -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="../img/productos/goldFish.webp" class="card-img-top w-100" alt="Alimento para peces dorados">
+                    <div class="card-body">
+                        <h2 class="card-title">Peces dorados TetraFin</h2>
+                        <p class="card-text">  TetraFin Goldfish Flakes - 28 Gr doble caja</p>
+                        <p class="price">$ <span id="precioRemera">4000</span></p>
+                        <input type="number" id="cantidadProducto4" value="1" min="1" max="10">
+
+                        <button onclick="agregarProducto('Sahumerio 4', 4000, 'cantidadProducto4')" href="#"
+                            class="btn bg-pink">agregar al carrito</button>
+                    </div>
+                </div>
+            </figure>
+            <!-- END CARD4 -->
+
+            <!-- END CARD5 -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="../img/productos/oldPrinceGatoAdulto.webp" class="card-img-top w-100" alt="Alimento para gato adulto Old Prince">
+                    <div class="card-body">
+                        <h2 class="card-title">Gato adulto Old Prince</h2>
+                        <p class="card-text">Old Prince Novel Gato Adulto Cordero Y Arroz X 7.5 + 1 Kg.</p>
+                        <p class="price">$ <span id="precioRemera">4500</span></p>
+                        <input type="number" id="cantidadProducto5" value="1" min="1" max="10">
+
+                        <button onclick="agregarProducto('Sahumerio 5',4500, 'cantidadProducto5')" href="#"
+                            class="btn bg-pink">agregar al carrito</button>
+                    </div>
+                </div>
+            </figure>
+            <!-- END CARD5 -->
+
+            <!-- CARD6 -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="../img/productos/oldPrinceNovelAdultos.webp" class="card-img-top w-100" alt="Alimento para perro adulto Old prince">
+                    <div class="card-body">
+                        <h2 class="card-title">Perro adulto Old prince</h2>
+                        <p class="card-text">Old Prince Novel Cya Cordero Adultos Med&Large X 15+3 Kg</p>
+                        <p class="price">$ <span id="precioRemera">5000</span></p>
+                        <input type="number" id="cantidadProducto6" value="1" min="1" max="10">
+
+                        <button onclick="agregarProducto('Sahumerio 6',5000, 'cantidadProducto6')" href="#"
+                            class="btn bg-pink">agregar al carrito</button>
+                    </div>
+                </div>
+            </figure>
+            <!-- END CARD6 -->
+
+            <!-- END CARD7 -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="../img/productos/pecesTropicales.webp" class="card-img-top w-100" alt="Alimento para peces tropicales">
+                    <div class="card-body">
+                        <h2 class="card-title">Alimentos para peces troícales</h2>
+                        <p class="card-text">TetraMin Tropical Flakes Nutrición Balanceada - 28 Gr</p>
+                        <p class="price">$ <span id="precioRemera">5500</span></p>
+                        <input type="number" id="cantidadProducto7" value="1" min="1" max="10">
+
+                        <button onclick="agregarProducto('Sahumerio 7',5500, 'cantidadProducto7')" href="#"
+                            class="btn bg-pink">agregar al carrito</button>
+                    </div>
+                </div>
+            </figure>
+            <!-- END CARD7 -->
+
+            <!-- CARD8 -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="../img/productos/tortugas.webp" class="card-img-top w-100" alt="Alimento para tortugas">
+                    <div class="card-body">
+                        <h2 class="card-title">Alimento para Tortugas Reptolife</h2>
+                        <p class="card-text">Alimento para Tortugas de agua jovén Reptolife</p>
+                        <p class="price">$ <span id="precioRemera">6000</span></p>
+                        <input type="number" id="8" value="1" min="1" max="10">
+
+                        <button onclick="agregarProducto('Sahumerio 8',6000, 'cantidadProducto8')" href="#"
+                            class="btn bg-pink">agregar al carrito</button>
+                    </div>
+                </div>
+            </figure>
+            <!-- END CARD8 -->
+
+        </section>
+        <!-- ENDPRODUCTOS -->
+
+        <!-- <section class="float-left fixed-top ">
+            <button onclick="mostrarCarrito()">mostrar/ocultar carrito</button>
+            <div class="carritoVisible" id="carrito">
+                <h2>Carrito de compras</h2>
+                <ul id="carritoLista">
+
+                </ul>
+                <h3>El valor total de tu compra es: $<span id="carritoTotal"></span></h3>
+            </div>
+        </section> -->
+
+    </main>
+    <!-- END MAIN -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row pb-2 bg-secondary text-white footer">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 m-b3">columna</p>
+                    <a class="navbar-brand  " href="/index.html">
+                        <img src="../img/logo/arribaLasPatasLogo2.svg" alt="Logo Arriba las Patas">
+                    </a>
+                </div>
+
+            <div class="row pb-2 bg-secondary text-white">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 m-b3">columna</p>
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Servicios</p>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">Baños</a>
+                    </div>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">Paseo</a>
+                    </div>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">Peluqueria</a>
+                    </div>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">Entrenamiento</a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 m-b3">Nosotros</p>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">Sobre nosotros</a>
+                    </div>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">Sucursales</a>
+                    </div>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">contacto</a>
+                    </div>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">Entrenamiento</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 m-b3">Info</p>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">Ofertas</a>
+                    </div>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">Promociones Bancarias</a>
+                    </div>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">Delivery</a>
+                    </div>
+                    <div class="mb-2 ">
+                        <a class="text-white text-decoration-none" href="">Términos y condiciones</a>
+                    </div>
+                    <div class="col-xs-12 pt-4">
+                        <p class="text-white text-center">Copyright - All rights reserved © 2023</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+    <!-- END FOOTER -->
+    <!-- Js de BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/carrito.js"></script>
+    <!-- js carrito -->
+    <script src="./assets/js/carrito.js"></script>
+</body>
+
+</html>
